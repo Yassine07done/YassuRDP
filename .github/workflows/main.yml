@@ -1,14 +1,14 @@
-name:Windows-Litemanager
+name: Windows-Litemanager
 on:
 workflow_dispatch:
 
 jobs:
   build:
-      name:Start Building... 
-      runs-on: windows-latest
+      name: Start Building... 
+      runs-on: Windows-latest
 
       steps:
-      - name:downloading & installing Essentials
+      - name: downloading & installing Essentials
       run: |
       Invoke-WebRequest -Uri
  "https://gitlab.com/chamod12/lm_win-10__github_rdp/-/raw/main/Downloads.bat"-OutFile
